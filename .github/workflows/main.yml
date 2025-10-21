@@ -56,7 +56,7 @@ jobs:
   deploy:
     needs: build
     name: Deploy
-    runs-on: [ self-hosted, deploy-spring-test ]
+    runs-on: [ self-hosted, account-service ]
     steps:
     - name: Deploy to Production
       uses: appleboy/ssh-action@v0.1.10
