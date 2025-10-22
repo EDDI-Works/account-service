@@ -16,7 +16,7 @@ import java.util.Map;
 
 @Slf4j
 @RestController
-@RequestMapping("/api/dashboard")
+@RequestMapping("/account/dashboard")
 @RequiredArgsConstructor
 public class DashboardController {
     

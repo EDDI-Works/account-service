@@ -26,6 +26,8 @@ public class AccountController {
     private final AccountProfileRepository accountProfileRepository;
     private final RedisCacheService redisCacheService;
 
+    @GetMapping("/health")
+
     @PostMapping("/register")
     public String register(@RequestHeader("Authorization") String authorizationHeader,
                            @RequestBody RegisterNormalAccountRequestForm requestForm) {

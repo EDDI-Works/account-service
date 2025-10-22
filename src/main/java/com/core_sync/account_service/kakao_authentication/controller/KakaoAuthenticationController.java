@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/authentication/kakao")
+@RequestMapping("/account/authentication/kakao")
 public class KakaoAuthenticationController {
 
     private final KakaoAuthenticationService kakaoAuthenticationService;
