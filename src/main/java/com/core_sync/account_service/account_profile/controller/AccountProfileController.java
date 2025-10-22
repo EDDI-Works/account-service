@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/account/account-profile")
+@RequestMapping("/account-profile")
 public class AccountProfileController {
 
     private final AccountProfileService accountProfileService;

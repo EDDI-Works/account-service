@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/account/authentication")
+@RequestMapping("/authentication")
 public class AuthenticationController {
 
     private final RedisCacheService redisCacheService;

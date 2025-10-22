@@ -17,7 +17,7 @@ import java.util.UUID;
 
 @Slf4j
 @RestController
-@RequestMapping("/account")
+@RequestMapping("/")
 @RequiredArgsConstructor
 public class AccountController {
 
@@ -27,6 +27,9 @@ public class AccountController {
     private final RedisCacheService redisCacheService;
 
     @GetMapping("/health")
+    public String health() {
+        return "OK";
+    }
 
     @PostMapping("/register")
     public String register(@RequestHeader("Authorization") String authorizationHeader,
