@@ -1,5 +1,7 @@
 server:
   port: ${SERVER_PORT}
+  servlet:
+    context-path: /account
 
 spring:
   application:
@@ -82,3 +84,4 @@ springdoc:
     enabled: false
   swagger-ui:
     enabled: false
+
