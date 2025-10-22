@@ -17,7 +17,7 @@ public class AuthenticationController {
     private final AuthenticationService authenticationService;
 
     @GetMapping("/authenticate")
-    public ResponseEntity<?> authenticate(@RequestHeader("AuthenticationHeader") String authenticationHeader) {
+    public ResponseEntity<?> authenticate(@RequestHeader("Authorization") String authenticationHeader) {
 
         String userToken = authenticationHeader.replace("Bearer ", "").trim();
         Long accountId = redisCacheService.getValueByKey(userToken, Long.class);
