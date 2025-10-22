@@ -17,7 +17,6 @@ import java.util.UUID;
 
 @Slf4j
 @RestController
-@RequestMapping("/")
 @RequiredArgsConstructor
 public class AccountController {
 
